@@ -59,4 +59,4 @@ class Api {
 
 export const api: AxiosInstance = new Api().instance
 
-export default new Api()
+export default Api

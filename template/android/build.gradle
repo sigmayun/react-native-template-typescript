@@ -31,6 +31,7 @@ allprojects {
             url("$rootDir/../node_modules/jsc-android/dist")
         }
 
+        maven { url 'https://maven.aliyun.com/repository/public/' }
         google()
         jcenter()
         maven { url 'https://jitpack.io' }

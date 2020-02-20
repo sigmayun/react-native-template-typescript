@@ -22,7 +22,8 @@
     "mobx": "^5.15.4",
     "mobx-react": "^6.1.8",
     "react": "16.9.0",
-    "react-native": "0.61.5"
+    "react-native": "0.61.5",
+    "react-native-iphone-x-helper": "^1.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",

@@ -17,7 +17,8 @@
     "an:genkeypair": "keytool -genkeypair -v -keystore release.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000",
     "an:key-debug": "keytool -list -v -keystore ./android/app/debug.keystore",
     "an:key-release": "keytool -v -list -keystore ./android/app/release.keystore",
-    "postinstall": "npx jetify && node scripts/react-scrollview-fix.js"
+    "postinstall": "npx jetify && node scripts/react-scrollview-fix.js",
+    "icon": "npx iconfont-rn"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.6",
@@ -59,7 +60,7 @@
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/runtime": "^7.6.2",
-    "@sishuguojixuefu/eslint-config": "^0.7.3",
+    "@sishuguojixuefu/eslint-config": "^0.8.0",
     "@types/jest": "^24.0.24",
     "@types/lodash": "^4.14.149",
     "@types/qs": "^6.9.1",
@@ -73,6 +74,7 @@
     "jetifier": "^1.6.5",
     "lint-staged": "^9.5.0",
     "metro-react-native-babel-preset": "^0.56.0",
+    "react-native-iconfont-cli": "^1.6.3",
     "react-test-renderer": "16.9.0",
     "typescript": "^3.7.3"
   },

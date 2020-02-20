@@ -1,0 +1,9 @@
+{
+  "symbol_url": "//at.alicdn.com/t/font_1610115_zaw19gt8nmi.js",
+  "use_typescript": true,
+  "save_dir": "./src/iconfont",
+  "generate_mode": "all-in-one",
+  "trim_icon_prefix": "icon-",
+  "default_icon_size": 18,
+  "summary_component_name": "Icon"
+}

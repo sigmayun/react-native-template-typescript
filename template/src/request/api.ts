@@ -57,6 +57,6 @@ class Api {
   }
 }
 
-const api: AxiosInstance = new Api().instance
+export const api: AxiosInstance = new Api().instance
 
-export default api
+export default new Api()

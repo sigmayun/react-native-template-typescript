@@ -30,6 +30,7 @@
     "qs": "^6.9.1",
     "react": "16.9.0",
     "react-native": "0.61.5",
+    "react-native-animatable": "^1.3.3",
     "react-native-config-reader": "^4.1.0",
     "react-native-device-info": "^5.5.3",
     "react-native-echarts-wrapper": "^2.0.0",

@@ -1,6 +1,8 @@
 # :space_invader: React Native Template TypeScript
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://img.shields.io/npm/v/@sigmayun/react-native-template-typescript.svg)](https://badge.fury.io/js/@sigmayun/react-native-template-typescript)
+[![npm](https://img.shields.io/npm/dt/@sigmayun/react-native-template-typescript.svg)](https://www.npmjs.com/package/@sigmayun/react-native-template-typescript)
 
 > React Native template for a quick start with TypeScript.
 
@@ -21,6 +23,12 @@ Further information can be found here: https://github.com/react-native-community
 
 ```sh
 npx react-native init MyApp --template @sigmayun/react-native-template-typescript
+```
+
+### react-native@0.60.x
+
+```sh
+npx react-native init MyApp --template react-native-template-typescript@6.2.0
 ```
 
 ## :computer: Contributing

@@ -14,5 +14,7 @@ configure({ enforceActions: 'observed' })
 // 设置字体大小不随系统字体大小变化而变化
 Text.defaultProps = { ...Text.defaultProps, allowFontScaling: false }
 TextInput.defaultProps = { ...TextInput.defaultProps, allowFontScaling: false }
+// 屏蔽黄屏警告
+console.disableYellowBox = true
 
 AppRegistry.registerComponent(appName, () => App)

@@ -133,6 +133,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        resConfigs "en","zh"
     }
     splits {
         abi {
@@ -160,6 +161,9 @@ android {
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            zipAlignEnabled true
+            shrinkResources true
+            debuggable false
         }
     }
     // applicationVariants are e.g. debug, release

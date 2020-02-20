@@ -187,6 +187,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				0D5FCFA323A4B650009353E9 /* Get ipa Build Time */,
 			);
 			buildRules = (
 			);
@@ -327,6 +328,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		0D5FCFA323A4B650009353E9 /* Get ipa Build Time */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Get ipa Build Time";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\ninfoplist=\"$BUILT_PRODUCTS_DIR/$INFOPLIST_PATH\"\nbuilddate=`date +%Y-%m-%d_%H:%M`\nif [[ -n \"$builddate\" ]]; then\n/usr/libexec/PlistBuddy -c \"Set :BUILD_TIME $builddate\" ${infoplist}\nfi\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;

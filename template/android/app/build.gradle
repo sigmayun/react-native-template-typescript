@@ -134,6 +134,10 @@ android {
         versionCode 1
         versionName "1.0"
         resConfigs "en","zh"
+        // APP_NAME
+        buildConfigField "String", "APP_NAME", '"' + rootProject.name + '"'
+        // BUILD_TIME
+        buildConfigField "String", "BUILD_TIME", '"' + new Date().format("yyyy-MM-dd HH:mm:ss", TimeZone.getTimeZone("Asia/Shanghai")) + '"'
     }
     splits {
         abi {

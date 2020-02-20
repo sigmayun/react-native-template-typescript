@@ -34,6 +34,7 @@
     "react-native-device-info": "^5.5.3",
     "react-native-echarts-wrapper": "^2.0.0",
     "react-native-gesture-handler": "^1.6.0",
+    "react-native-image-crop-picker": "^0.28.0",
     "react-native-iphone-x-helper": "^1.2.1",
     "react-native-reanimated": "^1.7.0",
     "react-native-safe-area-context": "^0.7.3",

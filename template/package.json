@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "postinstall": "npx jetifier && node scripts/react-scrollview-fix.js",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
@@ -17,7 +18,6 @@
     "an:genkeypair": "keytool -genkeypair -v -keystore release.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000",
     "an:key-debug": "keytool -list -v -keystore ./android/app/debug.keystore",
     "an:key-release": "keytool -v -list -keystore ./android/app/release.keystore",
-    "postinstall": "npx jetify && node scripts/react-scrollview-fix.js",
     "icon": "npx iconfont-rn"
   },
   "dependencies": {

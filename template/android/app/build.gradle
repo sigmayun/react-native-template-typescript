@@ -133,7 +133,6 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
-        resConfigs "en","zh"
         // APP_NAME
         buildConfigField "String", "APP_NAME", '"' + rootProject.name + '"'
         // BUILD_TIME

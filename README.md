@@ -10,7 +10,7 @@
 
 - Elegant usage directly within the [React Native CLI](https://github.com/react-native-community/cli)
 - Consistent with the default React Native template
-- Minimal additional dependencies
+- Powerful additional dependencies
 
 ## :arrow_forward: Usage
 

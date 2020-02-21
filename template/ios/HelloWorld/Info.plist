@@ -8,7 +8,6 @@
 	<string />
 	<key>BUILD_TYPE</key>
 	<string>$(CONFIGURATION)</string>
-	<string>Hello App Display Name</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>

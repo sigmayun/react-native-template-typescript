@@ -3,9 +3,9 @@
  */
 
 import { AppRegistry, Text, TextInput } from 'react-native'
+import 'react-native-gesture-handler'
 import { configure } from 'mobx'
 import './global'
-import 'react-native-gesture-handler'
 import App from './App'
 import { name as appName } from './app.json'
 

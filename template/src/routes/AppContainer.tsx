@@ -8,9 +8,11 @@ import getActiveRouteName from './getActiveRouteName'
 import getScreenOptions from './getScreenOptions'
 import { RootStackParamList } from './RootStackParamList'
 import HomeScreen from '../screens/HomeScreen'
+import MineScreen from '../screens/MineScreen'
 
 type BottomTabParamList = {
   HomeStackScreen: undefined
+  MineStackScreen: undefined
 }
 
 const RootStack = createStackNavigator<RootStackParamList>()
@@ -32,6 +34,21 @@ const HomeStackScreen = () => {
   )
 }
 
+const MineStackScreen = () => {
+  return (
+    // @ts-ignore
+    <Stack.Navigator screenOptions={getScreenOptions()}>
+      <Stack.Screen
+        name="MineScreen"
+        component={MineScreen}
+        options={{
+          headerTitle: '我的',
+        }}
+      />
+    </Stack.Navigator>
+  )
+}
+
 const BottomTabScreen = () => (
   <BottomTab.Navigator
     screenOptions={({ route }) => ({
@@ -39,6 +56,8 @@ const BottomTabScreen = () => (
         let iconName
         if (route.name === 'HomeStackScreen') {
           iconName = focused ? 'shouye1' : 'shouye'
+        } else if (route.name === 'MineStackScreen') {
+          iconName = focused ? 'wode1' : 'wode'
         }
         return <Icon name={iconName} size={size} color={color} />
       },
@@ -49,6 +68,7 @@ const BottomTabScreen = () => (
     }}
   >
     <BottomTab.Screen name="HomeStackScreen" component={HomeStackScreen} options={{ tabBarLabel: '首页' }} />
+    <BottomTab.Screen name="MineStackScreen" component={MineStackScreen} options={{ tabBarLabel: '我的' }} />
   </BottomTab.Navigator>
 )
 

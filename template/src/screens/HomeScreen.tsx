@@ -12,12 +12,12 @@ type Props = {
 }
 
 const HomeScreen: React.SFC<Props> = ({ route, navigation }) => {
-  console.log('[HomeScreen]', route, navigation)
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Home Screen</Text>
+      <Text style={{ fontSize: 30 }}>HomeScreen</Text>
     </View>
   )
 }
+HomeScreen.displayName = 'HomeScreen'
 
 export default HomeScreen

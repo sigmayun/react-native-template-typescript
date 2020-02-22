@@ -12,6 +12,7 @@ const getScreenOptions = () => {
     headerBackTitleVisible: false,
     headerTitleAlign: 'center',
     cardStyle: {
+      flex: 1,
       backgroundColor: '#f5f5f9',
     },
     ...TransitionPresets.SlideFromRightIOS,

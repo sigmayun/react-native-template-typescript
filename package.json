@@ -29,5 +29,37 @@
   "bugs": {
     "url": "https://github.com/sigmayun/react-native-template-typescript/issues"
   },
-  "homepage": "https://github.com/sigmayun/react-native-template-typescript#readme"
+  "homepage": "https://github.com/sigmayun/react-native-template-typescript#readme",
+  "devDependencies": {
+    "@sishuguojixuefu/eslint-config": "^0.8.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@sishuguojixuefu"
+    ],
+    "env": {
+      "react-native/react-native": true
+    }
+  },
+  "eslintIgnore": [
+    "!.eslintrc.js",
+    "!.prettierrc.js",
+    "__tests__/App-test.tsx"
+  ],
+  "prettier": "@sishuguojixuefu/eslint-config/.prettierrc.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "**/*.{md,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
 }

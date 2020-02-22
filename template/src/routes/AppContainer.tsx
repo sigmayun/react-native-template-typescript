@@ -10,12 +10,12 @@ import HomeScreen from '../screens/HomeScreen'
 const RootStack = createStackNavigator<RootStackParamList>()
 
 export default () => {
-  const routeNameRef = React.useRef()
+  const ref = React.useRef(null)
   return (
     <NavigationContainer
       ref={navigationRef}
       onStateChange={state => {
-        const previousRouteName = routeNameRef.current
+        const previousRouteName = ref.current
         const currentRouteName = getActiveRouteName(state)
         if (previousRouteName !== currentRouteName) {
           console.log('[onStateChange]', currentRouteName)

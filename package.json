@@ -3,7 +3,7 @@
   "version": "0.0.9",
   "description": "React Native template for a quick start with TypeScript.",
   "scripts": {
-    "postversion": "git push --tags && git push && npm publish"
+    "postversion": "npm publish && git push --tags && git push"
   },
   "files": [
     "template",

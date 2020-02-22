@@ -25,6 +25,7 @@ const HomeScreen: React.SFC<Props> = ({ route, navigation }) => {
     </List>
   )
 }
+
 HomeScreen.displayName = 'HomeScreen'
 
 export default HomeScreen

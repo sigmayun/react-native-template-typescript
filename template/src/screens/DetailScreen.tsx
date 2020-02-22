@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, StyleSheet, SafeAreaView } from 'react-native'
+import { SafeAreaView, Text, StyleSheet } from 'react-native'
 import { RouteProp } from '@react-navigation/native'
 import { StackNavigationProp } from '@react-navigation/stack'
 import { RootStackParamList } from '../routes/RootStackParamList'
@@ -18,6 +18,7 @@ const DetailScreen: React.SFC<Props> = ({ navigation, route }) => {
     </SafeAreaView>
   )
 }
+
 DetailScreen.displayName = 'DetailScreen'
 
 const styles = StyleSheet.create({

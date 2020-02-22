@@ -6,7 +6,7 @@ import AppContainer from './routes/AppContainer'
 const App = () => {
   return (
     <Provider>
-      <StatusBar backgroundColor="#f5f5f9" barStyle="dark-content" />
+      <StatusBar backgroundColor="#fffffff" barStyle="dark-content" />
       <AppContainer />
     </Provider>
   )

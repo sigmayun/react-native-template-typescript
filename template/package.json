@@ -54,7 +54,6 @@
     "react-native-spring-scrollview": "^2.0.23",
     "react-native-svg": "^11.0.1",
     "react-native-webview": "^8.1.1",
-    "react-navigation-backhandler": "^1.4.0",
     "react-navigation-header-buttons": "^3.0.5",
     "rn-fetch-blob": "^0.12.0"
   },

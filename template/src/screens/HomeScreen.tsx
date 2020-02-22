@@ -1,7 +1,7 @@
 import React from 'react'
-import { View, Text } from 'react-native'
 import { StackNavigationProp } from '@react-navigation/stack'
 import { RouteProp } from '@react-navigation/native'
+import { List } from '@ant-design/react-native'
 import { RootStackParamList } from '../routes/RootStackParamList'
 
 type DetailsScreenNavigationProp = StackNavigationProp<RootStackParamList, 'HomeScreen'>
@@ -13,9 +13,16 @@ type Props = {
 
 const HomeScreen: React.SFC<Props> = ({ route, navigation }) => {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text style={{ fontSize: 30 }}>HomeScreen</Text>
-    </View>
+    <List>
+      <List.Item
+        onPress={() => {
+          navigation.navigate('DetailScreen')
+        }}
+        arrow="horizontal"
+      >
+        Go DetailScreen
+      </List.Item>
+    </List>
   )
 }
 HomeScreen.displayName = 'HomeScreen'

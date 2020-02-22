@@ -9,6 +9,7 @@ import getScreenOptions from './getScreenOptions'
 import { RootStackParamList } from './RootStackParamList'
 import HomeScreen from '../screens/HomeScreen'
 import MineScreen from '../screens/MineScreen'
+import DetailScreen from '../screens/DetailScreen'
 
 type BottomTabParamList = {
   HomeStackScreen: undefined
@@ -94,6 +95,7 @@ export default () => {
         screenOptions={getScreenOptions()}
       >
         <RootStack.Screen name="BottomTabScreen" component={BottomTabScreen} options={{ headerShown: false }} />
+        <RootStack.Screen name="DetailScreen" component={DetailScreen} options={{ headerTitle: '详情' }} />
         {/* Add other Screens */}
       </RootStack.Navigator>
     </NavigationContainer>

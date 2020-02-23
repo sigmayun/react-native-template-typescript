@@ -29,6 +29,7 @@
     "@react-navigation/native": "^5.0.6",
     "@react-navigation/stack": "^5.0.6",
     "axios": "^0.19.2",
+    "clean-deep": "^3.3.0",
     "lodash": "^4.17.15",
     "mobx": "^5.15.4",
     "mobx-react": "^6.1.8",

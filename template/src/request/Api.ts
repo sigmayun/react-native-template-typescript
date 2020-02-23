@@ -1,26 +1,11 @@
-import qs from 'qs'
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios'
-
-// 递归删除参数值为 null 或 undefined 的参数
-const filterParams = obj => {
-  if (obj) {
-    Object.keys(obj).forEach(key => {
-      if (typeof obj[key] === 'object') {
-        filterParams(obj[key]) // 递归遍历
-      }
-
-      if (obj[key] === null || obj[key] === undefined) {
-        delete obj[key]
-      }
-    })
-  }
-  return obj
-}
+import qs from 'qs'
+import cleanDeep from 'clean-deep'
 
 const handleRequestConfig = (config: AxiosRequestConfig) => {
-  filterParams(config.params)
-  filterParams(config.data)
-  filterParams(config.headers)
+  cleanDeep(config.params)
+  cleanDeep(config.data)
+  cleanDeep(config.headers)
   if (config.method === 'get') {
     config.paramsSerializer = params => qs.stringify(params, { arrayFormat: 'repeat' })
   }

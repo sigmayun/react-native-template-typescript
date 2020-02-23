@@ -7,7 +7,10 @@ const handleRequestConfig = (config: AxiosRequestConfig) => {
   cleanDeep(config.data)
   cleanDeep(config.headers)
   if (config.method === 'get') {
-    config.paramsSerializer = params => qs.stringify(params, { arrayFormat: 'repeat' })
+    config.paramsSerializer = params =>
+      qs.stringify(params, {
+        arrayFormat: 'repeat',
+      })
   }
   return config
 }

@@ -1,15 +1,8 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
-import { RouteProp } from '@react-navigation/native'
-import { StackNavigationProp } from '@react-navigation/stack'
-import { RootStackParamList } from '../routes/RootStackParamList'
+import { StyleSheet, Text, View } from 'react-native'
+import { RouteType } from 'src/routes/RouteType'
 
-type MineScreenNavigationProp = StackNavigationProp<RootStackParamList, 'MineScreen'>
-type MineScreenRouteProp = RouteProp<RootStackParamList, 'MineScreen'>
-type Props = {
-  navigation: MineScreenNavigationProp
-  route: MineScreenRouteProp
-}
+type Props = RouteType<'MineScreen'>
 
 export default class MineScreen extends React.Component<Props> {
   constructor(props: Props) {

@@ -1,22 +1,15 @@
 import React from 'react'
-import { StackNavigationProp } from '@react-navigation/stack'
-import { RouteProp } from '@react-navigation/native'
 import { List } from '@ant-design/react-native'
-import { RootStackParamList } from '../routes/RootStackParamList'
+import { RouteType } from 'src/routes/RouteType'
 
-type DetailsScreenNavigationProp = StackNavigationProp<RootStackParamList, 'HomeScreen'>
-type DetailsScreenRouteProp = RouteProp<RootStackParamList, 'HomeScreen'>
-type Props = {
-  navigation: DetailsScreenNavigationProp
-  route: DetailsScreenRouteProp
-}
-
-const HomeScreen: React.SFC<Props> = ({ route, navigation }) => {
+const HomeScreen: React.FC<RouteType<'HomeScreen'>> = ({ route, navigation }) => {
   return (
     <List>
       <List.Item
         onPress={() => {
-          navigation.navigate('DetailScreen')
+          navigation.navigate('DetailScreen', {
+            itemId: Math.floor(Math.random() * 100),
+          })
         }}
         arrow="horizontal"
       >
@@ -25,7 +18,5 @@ const HomeScreen: React.SFC<Props> = ({ route, navigation }) => {
     </List>
   )
 }
-
-HomeScreen.displayName = 'HomeScreen'
 
 export default HomeScreen

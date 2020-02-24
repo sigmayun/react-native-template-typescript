@@ -25,6 +25,10 @@ Further information can be found here: https://github.com/react-native-community
 npx react-native init MyApp --template @sigmayun/react-native-template-typescript
 ```
 
+将 `index.js` 中的 `import App from './App'` 改成 `import App from './src/App'` 即可看到我为大家默认配置的路由架构！
+
+> 注意： 我在 https://bre.is/zWKCftso 编写了高级配置的文档，请务必阅读！！！
+
 ### react-native@0.60.x
 
 ```sh

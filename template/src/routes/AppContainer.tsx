@@ -22,7 +22,6 @@ const Stack = createStackNavigator()
 
 const HomeStackScreen = () => {
   return (
-    // @ts-ignore
     <Stack.Navigator screenOptions={getScreenOptions()}>
       <Stack.Screen
         name="HomeScreen"
@@ -37,7 +36,6 @@ const HomeStackScreen = () => {
 
 const MineStackScreen = () => {
   return (
-    // @ts-ignore
     <Stack.Navigator screenOptions={getScreenOptions()}>
       <Stack.Screen
         name="MineScreen"
@@ -90,10 +88,7 @@ export default () => {
         routeNameRef.current = currentRouteName
       }}
     >
-      <RootStack.Navigator
-        // @ts-ignore
-        screenOptions={getScreenOptions()}
-      >
+      <RootStack.Navigator screenOptions={getScreenOptions()}>
         <RootStack.Screen name="BottomTabScreen" component={BottomTabScreen} options={{ headerShown: false }} />
         <RootStack.Screen name="DetailScreen" component={DetailScreen} options={{ headerTitle: '详情' }} />
         {/* Add other Screens */}

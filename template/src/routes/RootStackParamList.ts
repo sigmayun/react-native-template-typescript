@@ -4,7 +4,5 @@ export type RootStackParamList = {
   HomeScreen: undefined
   MineStackScreen: undefined
   MineScreen: undefined
-  DetailScreen: {
-    itemId: number
-  }
+  DetailScreen: undefined
 }

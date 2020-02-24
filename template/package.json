@@ -23,6 +23,7 @@
   "dependencies": {
     "@ant-design/icons-react-native": "^1.0.2",
     "@ant-design/react-native": "^3.2.2",
+    "@react-native-community/blur": "^3.4.1",
     "@react-native-community/masked-view": "^0.1.6",
     "@react-native-community/viewpager": "^3.3.0",
     "@react-navigation/bottom-tabs": "^5.0.6",

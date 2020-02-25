@@ -8,7 +8,7 @@ import KeyboardManager from 'react-native-keyboard-manager'
 import dayjs from 'dayjs'
 import { configure } from 'mobx'
 import './global'
-import App from './App'
+import App from './App.tsx'
 import { name as appName } from './app.json'
 import 'dayjs/locale/zh-cn'
 

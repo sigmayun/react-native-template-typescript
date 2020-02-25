@@ -1,6 +1,6 @@
 import React from 'react'
 import { SafeAreaView, StyleSheet, Text } from 'react-native'
-import { RouteType } from '../routes/RouteType'
+import { RouteType } from '~/routes/RouteType'
 
 type Props = RouteType<'DetailScreen'>
 

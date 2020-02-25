@@ -2,14 +2,14 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import Icon from '../iconfont/Icon'
 import { navigationRef } from './NavigationService'
 import getActiveRouteName from './getActiveRouteName'
 import getScreenOptions from './getScreenOptions'
 import { RootStackParamList } from './RootStackParamList'
-import HomeScreen from '../screens/HomeScreen'
-import MineScreen from '../screens/MineScreen'
-import DetailScreen from '../screens/DetailScreen'
+import Icon from '~/iconfont/Icon'
+import HomeScreen from '~/screens/HomeScreen'
+import MineScreen from '~/screens/MineScreen'
+import DetailScreen from '~/screens/DetailScreen'
 
 type BottomTabParamList = {
   HomeStackScreen: undefined

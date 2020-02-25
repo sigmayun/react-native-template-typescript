@@ -1,7 +1,7 @@
 import React from 'react'
 import { StatusBar } from 'react-native'
 import { Provider } from '@ant-design/react-native'
-import AppContainer from './routes/AppContainer'
+import AppContainer from '~/routes/AppContainer'
 
 const App = () => {
   return (

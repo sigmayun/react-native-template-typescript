@@ -1,6 +1,6 @@
 import React from 'react'
 import { List } from '@ant-design/react-native'
-import { RouteType } from '../routes/RouteType'
+import { RouteType } from '~/routes/RouteType'
 
 const HomeScreen: React.FC<RouteType<'HomeScreen'>> = ({ route, navigation }) => {
   return (

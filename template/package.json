@@ -74,8 +74,10 @@
     "@types/react-test-renderer": "16.9.1",
     "babel-jest": "^24.9.0",
     "babel-plugin-import": "^1.13.0",
+    "babel-plugin-root-import": "^6.4.1",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "babel-preset-mobx": "^2.0.0",
+    "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
     "husky": "^3.1.0",
     "jest": "^24.9.0",
     "jetifier": "^1.6.5",
@@ -102,6 +104,14 @@
     ],
     "env": {
       "react-native/react-native": true
+    },
+    "settings": {
+      "import/resolver": {
+        "babel-plugin-root-import": {
+          "rootPathSuffix": "src",
+          "rootPathPrefix": "~"
+        }
+      }
     }
   },
   "eslintIgnore": [

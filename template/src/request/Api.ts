@@ -3,9 +3,9 @@ import qs from 'qs'
 import cleanDeep from 'clean-deep'
 
 const handleRequestConfig = (config: AxiosRequestConfig) => {
-  cleanDeep(config.params)
-  cleanDeep(config.data)
-  cleanDeep(config.headers)
+  config.data = cleanDeep(config.params)
+  config.data = cleanDeep(config.data)
+  config.headers = cleanDeep(config.headers)
   if (config.method === 'get') {
     config.paramsSerializer = params =>
       qs.stringify(params, {

@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { navigationRef } from './NavigationService'
-import getActiveRouteName from './getActiveRouteName'
+import getActiveRoute from './getActiveRoute'
 import getScreenOptions from './getScreenOptions'
 import { RootStackParamList } from './RootStackParamList'
 import Icon from '~/iconfont/Icon'
@@ -78,14 +78,14 @@ export default () => {
       ref={navigationRef}
       onStateChange={state => {
         const previousRouteName = routeNameRef.current
-        const currentRouteName = getActiveRouteName(state)
-        if (previousRouteName !== currentRouteName) {
-          console.log('[onStateChange]', currentRouteName)
+        const currentRoute = getActiveRoute(state)
+        if (previousRouteName !== currentRoute.name) {
+          console.log('[onStateChange]', currentRoute)
           // 动态设置 StatusBar
           // 接入APM系统
         }
         // Save the current route name for later comparision
-        routeNameRef.current = currentRouteName
+        routeNameRef.current = currentRoute.name
       }}
     >
       <RootStack.Navigator screenOptions={getScreenOptions()}>

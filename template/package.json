@@ -15,7 +15,7 @@
     "an:installRelease": "yarn gradle:clean && cd android && ./gradlew app:installRelease",
     "an:releaseStaging": "yarn gradle:clean && cd android && ./gradlew app:assembleReleaseStaging",
     "an:installReleaseStaging": "yarn gradle:clean && cd android && ./gradlew app:installReleaseStaging",
-    "an:genkeypair": "keytool -genkeypair -v -keystore release.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000",
+    "an:genkeypair": "keytool -genkeypair -v -keystore release.keystore -alias androidreleasekey -keyalg RSA -keysize 2048 -validity 10000",
     "an:key-debug": "keytool -list -v -keystore ./android/app/debug.keystore",
     "an:key-release": "keytool -v -list -keystore ./android/app/release.keystore",
     "icon": "npx iconfont-rn"

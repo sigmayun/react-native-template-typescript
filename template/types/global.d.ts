@@ -7,4 +7,5 @@ declare const global: {
   isIphoneX: () => boolean
   getStatusBarHeight: () => number
   getBottomSpace: () => number
+  navigation?: import('@react-navigation/native').NavigationContainerRef
 }

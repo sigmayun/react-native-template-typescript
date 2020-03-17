@@ -2,7 +2,6 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { navigationRef } from './NavigationService'
 import getActiveRoute from './getActiveRoute'
 import getScreenOptions from './getScreenOptions'
 import { RootStackParamList } from './RootStackParamList'
@@ -75,7 +74,9 @@ export default () => {
   const routeNameRef = React.useRef(null)
   return (
     <NavigationContainer
-      ref={navigationRef}
+      ref={navigationRef => {
+        global.navigation = navigationRef
+      }}
       onStateChange={state => {
         const previousRouteName = routeNameRef.current
         const currentRoute = getActiveRoute(state)

@@ -134,6 +134,7 @@ android {
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
         // APP_NAME
         buildConfigField "String", "APP_NAME", '"' + rootProject.name + '"'
         // BUILD_TIME

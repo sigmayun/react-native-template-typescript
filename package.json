@@ -1,6 +1,6 @@
 {
   "name": "@sigmayun/react-native-template-typescript",
-  "version": "0.3.8",
+  "version": "0.4.0",
   "description": "React Native template for a quick start with TypeScript.",
   "scripts": {
     "postversion": "npm publish && git push --tags && git push"

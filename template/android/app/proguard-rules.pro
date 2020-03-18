@@ -8,3 +8,6 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # Add any project specific keep options here:
+
+# https://medium.com/@korlotyan/android-react-native-obfuscation-eeeec5760d07
+-dontobfuscate

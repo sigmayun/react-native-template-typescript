@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/sigmayun/react-native-template-typescript#readme",
   "devDependencies": {
-    "@sishuguojixuefu/eslint-config": "^0.9.1",
+    "@sishuguojixuefu/eslint-config": "^0.10.0",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8"
   },

@@ -75,7 +75,7 @@
     "@types/jest": "^24.0.24",
     "@types/lodash": "^4.14.149",
     "@types/qs": "^6.9.1",
-    "@types/react-native": "^0.61.15",
+    "@types/react-native": "^0.61.23",
     "@types/react-test-renderer": "16.9.1",
     "babel-jest": "^24.9.0",
     "babel-plugin-import": "^1.13.0",
